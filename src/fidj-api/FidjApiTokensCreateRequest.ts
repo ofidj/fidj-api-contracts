@@ -4,5 +4,6 @@ export interface FidjApiTokensCreateRequest {
     client_udid: string;
     client_info: string;
     scope: string;
+    refresh_token?: string;
     refreshCount?: number;
 }

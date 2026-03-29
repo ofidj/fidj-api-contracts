@@ -6,3 +6,4 @@ dist/
 .coverage/
 *.js.map
 package-lock.json
+.idea/
