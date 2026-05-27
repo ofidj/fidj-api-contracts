@@ -1,6 +1,8 @@
-# fidj-api-contracts
+# @ofidj/contracts
 
 TypeScript API contracts for Fidj services — request/response interfaces for REST endpoints (API v3).
+
+> _Renamed from `fidj-api-contracts` at 1.0.0. The HTTP contract version (`/v3`) is unchanged and independent from this package's semver._
 
 ## Structure
 
@@ -20,7 +22,7 @@ src/fidj-api/     # Fidj API endpoint contracts (auth, users, consents, apps, co
 ## Usage
 
 ```typescript
-import {FidjApiUsersCreateRequest, FidjApiConsentsResponse} from 'fidj-api-contracts';
+import {FidjApiUsersCreateRequest, FidjApiConsentsResponse} from '@ofidj/contracts';
 ```
 
 ## Commands
