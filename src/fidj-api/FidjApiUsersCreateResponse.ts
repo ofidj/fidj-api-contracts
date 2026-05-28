@@ -5,6 +5,7 @@ export interface FidjApiUsersCreateResponse {
         poc: {email?: string; mobile?: string};
         username: string;
         name: string;
+        emailVerified?: boolean;
         appsOwned: string[];
         appsSubscribed: string[];
     };

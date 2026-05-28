@@ -1,6 +1,6 @@
 {
   "name": "@ofidj/contracts",
-  "version": "1.0.0",
+  "version": "3.6.22",
   "author": "contact@fidj.ovh",
   "description": "TypeScript API contracts for Fidj services - request/response interfaces for REST endpoints",
   "keywords": [
