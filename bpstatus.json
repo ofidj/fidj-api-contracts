@@ -1,10 +1,7 @@
 {
-  "type": "standalone",
+  "type": "package",
   "version": "0.0.15",
   "status": {
-    "check-project-type": "2026-05-28 10:56",
-    "check-gitignore": "2026-05-28 10:56",
-    "check-scripts": "2026-05-28 10:56",
-    "check-style": "2026-05-28 10:56"
+    "check-project-type": "2026-05-28 10:59"
   }
 }
