@@ -5,4 +5,6 @@ export interface FidjApiUsersCreateRequest {
     password: string;
     email?: string;
     mobile?: string;
+    // Default true: unknown email auto-creates an account. Pass false for strict login → 401.
+    autoSignup?: boolean;
 }
