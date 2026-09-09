@@ -1,3 +1,7 @@
+## Sandbox build isolation
+
+- Compile contracts without ambient consumer test globals so nested checkouts build consistently under API and Angular workspaces.
+
 # Changelog
 
 - Correct owner user-list payloads and expose closing-app status.
