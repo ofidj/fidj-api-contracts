@@ -38,3 +38,8 @@ npm run bp:bump        # Version bump + git tag
 `FidjApiResetPasswordRequest` and `FidjApiVerifyEmailRequest` describe the one-use password reset and explicit email confirmation payloads. Recovery operates on the shared account; consent and erasure remain scoped to each app.
 
 App-data rights responses include optional `applicationData`, connection status and user-scoped `FidjApiPrivacyReceipt` records. App data and Fidj data have independent pending/completed outcomes.
+
+
+The development contracts include `FidjApiGroup`, owner group writes with an optimistic `version`, per-user group relationships, handler readiness, and erasure receipt retry/needs-attention states. Group member IDs identify app contracts, not global users.
+
+Authenticated `PUT /me` password changes require `{currentPassword, password}`. They apply the same password limits as reset, revoke existing sessions, and invalidate outstanding reset links. Sign in again after success. Name-only updates do not change credentials.

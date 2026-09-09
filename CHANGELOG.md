@@ -1,5 +1,7 @@
 # Changelog
 
+- Add app groups, handler readiness and automatic erasure retry receipt contracts.
+
 - Connect generated app data export/erasure, durable retry state and scoped completion receipts.
 
 - Add shared-account password recovery and email verification integration.
