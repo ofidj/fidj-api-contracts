@@ -4,6 +4,8 @@
 
 # Changelog
 
+- Add typed OIDC, organization/member/group/access and external-provider capability contracts.
+
 - Correct owner user-list payloads and expose closing-app status.
 
 - Add app groups, handler readiness and automatic erasure retry receipt contracts.

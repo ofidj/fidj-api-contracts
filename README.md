@@ -46,3 +46,9 @@ Authenticated `PUT /me` password changes require `{currentPassword, password}`. 
 
 
 Owner details include `deletionPending`. Owner user-list contracts now describe the actual limited profile/role objects and per-app consent summary, replacing the old string-only declarations. This is a coordinated development-contract correction.
+
+## Identity and tenant beta
+
+`FidjApiOidcConfiguration`, `FidjApiOrganization`, `FidjApiOrganizationAccess`, `FidjOrganizationMember`, `FidjOrganizationGroup` and `FidjApiExternalProvider` describe the coordinated identity expansion. Organization members identify app contracts; roles and suspension are tenant-scoped. External capability flags distinguish linking/revoking a Fidj grant from provider-account deletion, which is unsupported.
+
+App-session details may include authoritative `subject`, `username` and `appId` for an OIDC access token. Shared-account deletion now requires the principal session and `{confirm: 'delete-account'}`. Ordinary app sessions cannot change the global profile or enumerate other memberships.

@@ -43,3 +43,5 @@ export * from './FidjApiPrivacyResponse';
 export * from './FidjApiAccountRecovery';
 
 export * from './FidjApiGroups';
+
+export * from "./identity";
