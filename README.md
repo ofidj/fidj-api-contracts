@@ -43,3 +43,6 @@ App-data rights responses include optional `applicationData`, connection status 
 The development contracts include `FidjApiGroup`, owner group writes with an optimistic `version`, per-user group relationships, handler readiness, and erasure receipt retry/needs-attention states. Group member IDs identify app contracts, not global users.
 
 Authenticated `PUT /me` password changes require `{currentPassword, password}`. They apply the same password limits as reset, revoke existing sessions, and invalidate outstanding reset links. Sign in again after success. Name-only updates do not change credentials.
+
+
+Owner details include `deletionPending`. Owner user-list contracts now describe the actual limited profile/role objects and per-app consent summary, replacing the old string-only declarations. This is a coordinated development-contract correction.

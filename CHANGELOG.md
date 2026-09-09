@@ -1,5 +1,7 @@
 # Changelog
 
+- Correct owner user-list payloads and expose closing-app status.
+
 - Add app groups, handler readiness and automatic erasure retry receipt contracts.
 
 - Connect generated app data export/erasure, durable retry state and scoped completion receipts.

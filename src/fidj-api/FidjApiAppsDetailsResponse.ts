@@ -7,11 +7,12 @@ export interface FidjApiAppsDetailsResponse {
         owner: string;
         title: string;
         description?: string;
-        rolesByDefault: string[];
-        rolesAvailable: string[];
-        homes?: string[];
-        githubs?: string[];
-        endpoints?: string[];
+        deletionPending?: boolean;
+        rolesByDefault: {type: string; description?: string}[];
+        rolesAvailable: {type: string; description?: string}[];
+        homes?: FidjApiAppUrl[];
+        githubs?: FidjApiAppUrl[];
+        endpoints?: FidjApiAppUrl[];
         urls?: FidjApiAppUrl[];
         tti_hours?: number;
         salt?: string;
