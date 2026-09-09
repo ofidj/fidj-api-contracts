@@ -1,5 +1,7 @@
 # Changelog
 
+- Connect generated app data export/erasure, durable retry state and scoped completion receipts.
+
 - Add shared-account password recovery and email verification integration.
 
 - Local scenario: include Fidj in privacy, distinguish platform membership, and connect Alex’s personal and Studio Notes owner journeys.

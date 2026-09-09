@@ -36,3 +36,5 @@ npm run bp:bump        # Version bump + git tag
 ## Account lifecycle
 
 `FidjApiResetPasswordRequest` and `FidjApiVerifyEmailRequest` describe the one-use password reset and explicit email confirmation payloads. Recovery operates on the shared account; consent and erasure remain scoped to each app.
+
+App-data rights responses include optional `applicationData`, connection status and user-scoped `FidjApiPrivacyReceipt` records. App data and Fidj data have independent pending/completed outcomes.

@@ -2,6 +2,7 @@ import {FidjApiConsentsResponse} from './FidjApiConsentsResponse';
 import {FidjApiConsentHistoryEntry} from './FidjApiConsentsHistoryResponse';
 
 export interface FidjApiPrivacyAppsResponse {
+    requests?: FidjApiPrivacyReceipt[];
     apps: {
         id: string;
         title: string;
@@ -10,6 +11,7 @@ export interface FidjApiPrivacyAppsResponse {
         owned: boolean;
         platform: boolean;
         deletionPending: boolean;
+        appDataConnected?: boolean;
         consent: FidjApiConsentsResponse;
     }[];
 }
@@ -19,6 +21,8 @@ export interface FidjApiPrivacyErasureRequest {
 }
 
 export interface FidjApiPrivacyErasureResponse {
+    requestId?: string;
+    appData?: 'completed' | 'pending' | 'not_connected';
     status: 'completed' | 'pending';
     appId: string;
     coverage?: string;
@@ -26,6 +30,7 @@ export interface FidjApiPrivacyErasureResponse {
 }
 
 export interface FidjApiPrivacyExportResponse {
+    applicationData?: Record<string, unknown>;
     exportedAt: string;
     coverage: string;
     app: {id: string; title: string};
@@ -33,4 +38,14 @@ export interface FidjApiPrivacyExportResponse {
     membership: {roles: string[]; joinedAt?: string};
     consent: FidjApiConsentsResponse;
     history: FidjApiConsentHistoryEntry[];
+}
+
+export interface FidjApiPrivacyReceipt {
+    appTitle?: string;
+    requestId: string;
+    appId: string;
+    status: 'completed' | 'pending';
+    appData: 'completed' | 'pending';
+    fidjData: 'completed' | 'pending';
+    completedAt?: string;
 }
