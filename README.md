@@ -32,3 +32,7 @@ npm run build          # Compile TypeScript
 npm run bp:style:fix   # Lint + format
 npm run bp:bump        # Version bump + git tag
 ```
+
+## Account lifecycle
+
+`FidjApiResetPasswordRequest` and `FidjApiVerifyEmailRequest` describe the one-use password reset and explicit email confirmation payloads. Recovery operates on the shared account; consent and erasure remain scoped to each app.

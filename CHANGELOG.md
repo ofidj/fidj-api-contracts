@@ -1,11 +1,19 @@
 # Changelog
 
+- Add shared-account password recovery and email verification integration.
+
+- Local scenario: include Fidj in privacy, distinguish platform membership, and connect Alex’s personal and Studio Notes owner journeys.
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+### Local validation milestone (3.6.24)
+
+- Add app identity to consent responses and typed personal-app, export and erasure payloads.
 
 ## [3.6.22] - 2026-05-28
 

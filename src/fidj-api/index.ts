@@ -37,3 +37,7 @@ export * from './FidjApiContractsUpdateRequest';
 // Tokens
 export * from './FidjApiTokensCreateRequest';
 export * from './FidjApiTokensCreateResponse';
+
+export * from './FidjApiPrivacyResponse';
+
+export * from './FidjApiAccountRecovery';
