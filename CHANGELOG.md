@@ -4,7 +4,11 @@
 
 Dated entries are historical; current workflow is in the package README.
 
-## [Unreleased]
+## [3.7.0] - 2026-09-11
+
+Minor, not patch: `FidjApiAppsOAuthStatusResponse` is removed. It described the
+legacy per-app OAuth connector, whose routes answer 410 since 3.6.26, but the
+export going away is a break for anyone importing the type.
 
 - Add `pendingEmail`, the email-change and session contracts, and search/paging fields on the owner user list.
 - Remove `FidjApiAppsOAuthStatusResponse` with the legacy OAuth connector it described.
