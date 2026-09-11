@@ -4,5 +4,7 @@ export interface FidjApiAppsPublicResponse {
         id: string;
         title: string;
         description?: string;
+        home?: string;
+        agreement?: {version: string; text: string};
     };
 }

@@ -2,7 +2,7 @@
 
 TypeScript API contracts for Fidj services — request/response interfaces for REST endpoints (API v3).
 
-> _Renamed from `fidj-api-contracts` at 1.0.0. The HTTP contract version (`/v3`) is unchanged and independent from this package's semver._
+> _Renamed from `fidj-api-contracts` at 1.0.0. The API remains `/v3`; the current 3.6.x package versions align with the coordinated API work._
 
 ## Structure
 
@@ -30,8 +30,12 @@ import {FidjApiUsersCreateRequest, FidjApiConsentsResponse} from '@ofidj/contrac
 ```bash
 npm run build          # Compile TypeScript
 npm run bp:style:fix   # Lint + format
-npm run bp:bump        # Version bump + git tag
+npm test               # Placeholder only; does not validate behavior
 ```
+
+## Validation
+
+Follow [workspace TDD](../AGENTS.md): write a failing consumer/type fixture before changing a contract, implement until green, then refactor. Build this package and run affected API/SDK checks. The release-check script currently references a missing dependency-switch command; see the [release rules](../README.md#branches-and-releases).
 
 ## Account lifecycle
 
@@ -47,8 +51,6 @@ Authenticated `PUT /me` password changes require `{currentPassword, password}`. 
 
 Owner details include `deletionPending`. Owner user-list contracts now describe the actual limited profile/role objects and per-app consent summary, replacing the old string-only declarations. This is a coordinated development-contract correction.
 
-## Identity and tenant beta
+## Experimental types
 
-`FidjApiOidcConfiguration`, `FidjApiOrganization`, `FidjApiOrganizationAccess`, `FidjOrganizationMember`, `FidjOrganizationGroup` and `FidjApiExternalProvider` describe the coordinated identity expansion. Organization members identify app contracts; roles and suspension are tenant-scoped. External capability flags distinguish linking/revoking a Fidj grant from provider-account deletion, which is unsupported.
-
-App-session details may include authoritative `subject`, `username` and `appId` for an OIDC access token. Shared-account deletion now requires the principal session and `{confirm: 'delete-account'}`. Ordinary app sessions cannot change the global profile or enumerate other memberships.
+OIDC, organization and external-provider interfaces are development contracts, not evidence of implemented API routes. The workspace API has no OIDC provider or organization tenancy. Verify server behavior before using these types in an integration.

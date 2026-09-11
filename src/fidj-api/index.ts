@@ -26,7 +26,6 @@ export * from './FidjApiAppsPublicResponse';
 export * from './FidjApiAppsDetailsResponse';
 export * from './FidjApiAppsUpdateRequest';
 export * from './FidjApiAppsUsersResponse';
-export * from './FidjApiAppsOAuthStatusResponse';
 export * from './FidjApiAppsMeDetailsResponse';
 
 // Contracts
@@ -45,3 +44,4 @@ export * from './FidjApiAccountRecovery';
 export * from './FidjApiGroups';
 
 export * from "./identity";
+export * from './FidjApiAccountSelfService';

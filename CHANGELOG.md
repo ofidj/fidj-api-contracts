@@ -1,27 +1,22 @@
-## Sandbox build isolation
-
-- Compile contracts without ambient consumer test globals so nested checkouts build consistently under API and Angular workspaces.
-
 # Changelog
 
-- Add typed OIDC, organization/member/group/access and external-provider capability contracts.
+- Describe login acceptance fields and public versioned app-agreement metadata.
 
-- Correct owner user-list payloads and expose closing-app status.
-
-- Add app groups, handler readiness and automatic erasure retry receipt contracts.
-
-- Connect generated app data export/erasure, durable retry state and scoped completion receipts.
-
-- Add shared-account password recovery and email verification integration.
-
-- Local scenario: include Fidj in privacy, distinguish platform membership, and connect Alex’s personal and Studio Notes owner journeys.
-
-All notable changes to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+Dated entries are historical; current workflow is in the package README.
 
 ## [Unreleased]
+
+- Add `pendingEmail`, the email-change and session contracts, and search/paging fields on the owner user list.
+- Remove `FidjApiAppsOAuthStatusResponse` with the legacy OAuth connector it described.
+- Compile contracts without ambient consumer test globals so nested workspace builds remain consistent.
+
+- Add the optional public app home URL to the public response contract.
+- Add typed OIDC, organization/member/group/access and external-provider capability contracts.
+- Correct owner user-list payloads and expose closing-app status.
+- Add app groups, handler readiness and automatic erasure retry receipt contracts.
+- Connect generated app data export/erasure, durable retry state and scoped completion receipts.
+- Add shared-account password recovery and email verification integration.
+- Local scenario: include Fidj in privacy, distinguish platform membership, and connect Alex’s personal and Studio Notes owner journeys.
 
 ### Local validation milestone (3.6.24)
 

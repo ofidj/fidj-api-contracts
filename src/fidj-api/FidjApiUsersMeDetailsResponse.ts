@@ -6,6 +6,7 @@ export interface FidjApiUsersMeDetailsResponse {
         username: string;
         name: string;
         emailVerified?: boolean;
+        pendingEmail?: string | null;
         appsOwned: string[];
         appsSubscribed: string[];
     };
