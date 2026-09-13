@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.7.2] - 2026-09-13
+
+- Describe `signin` on the status response: which screen collects a credential,
+  `fidj-ui` or `provider-page`. The switch behind it fails closed and silently,
+  so without this an operator cannot tell whether their configuration took.
+
 - Describe login acceptance fields and public versioned app-agreement metadata.
 
 Dated entries are historical; current workflow is in the package README.
