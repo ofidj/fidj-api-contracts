@@ -31,6 +31,7 @@
     "version:sync": "node ./scripts/bp/sync-version.cjs",
     "bp:update-changelog-dates": "node ./scripts/bp/update-changelog-date.cjs",
     "bp:style:fix": "eslint 'src/**/*.ts' 'specs/**/*.ts' --fix --no-error-on-unmatched-pattern && eslint 'src/**/*.js' 'specs/**/*.js' --fix --no-error-on-unmatched-pattern && prettier --write \"src/**/*.ts\" --no-error-on-unmatched-pattern && prettier --write \"src/**/*.js\" --no-error-on-unmatched-pattern",
+    "bp:dead-code": "knip",
     "bp:branch:push": "BRANCH=$(git rev-parse --abbrev-ref HEAD) && git add . && (git diff-index --quiet HEAD && echo 'No changes to commit' || (git commit -m \"$BRANCH pushed\" && git push))",
     "bp:branch:squash": "node ./scripts/bp/squash-commits.cjs",
     "bp:branch:check-before-release": "npm run bp:use-remote-deps && node ./scripts/bp/check-before-release.cjs",
@@ -40,7 +41,6 @@
     "build:dist": "rm -rf dist/ && npx tsc && cp package.json dist/ && cp *.md dist/",
     "test": "node --test test/*.test.mjs"
   },
-  "dependencies": {},
   "devDependencies": {
     "@eslint/eslintrc": "~3.3.1",
     "@eslint/js": "~9.39.1",
@@ -51,6 +51,7 @@
     "eslint-config-prettier": "~10.1.5",
     "eslint-plugin-import": "~2.32.0",
     "eslint-plugin-prettier": "~5.5.4",
+    "knip": "^6.35.1",
     "prettier": "~3.7.0",
     "typescript": "~5.9.3"
   }
