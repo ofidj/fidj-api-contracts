@@ -1,5 +1,14 @@
 # Changelog
 
+## [3.7.3] - 2026-09-14
+
+- Release on the shared @ofidj version: contracts, SDK, generator, API and
+  console now carry one number, which generated apps display as
+  `fidj@<version>`.
+- Keep `bpInfo` and `package.json` on that number. They had drifted two patches
+  apart, unnoticed because nothing read them together; `npm run version:sync`
+  rewrites the constant and `npm test` now fails when it is stale.
+
 ## [3.7.2] - 2026-09-13
 
 - Describe `signin` on the status response: which screen collects a credential,
