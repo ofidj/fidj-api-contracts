@@ -40,7 +40,13 @@ export interface FidjApiPurpose {
     recipients: string[];
     transfers: {outsideEEA: boolean; safeguard: string | null};
     automatedDecision: boolean;
-    implementation: {implemented: boolean; verified?: boolean; enforced: boolean; code?: string; gap?: string};
+    implementation: {
+        implemented: boolean;
+        verified?: boolean;
+        enforced: boolean;
+        code?: string;
+        gap?: string;
+    };
     publishedAt?: string;
 }
 
