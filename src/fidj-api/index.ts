@@ -44,5 +44,5 @@ export * from './FidjApiAccountRecovery';
 export * from './FidjApiGroups';
 export * from './FidjApiPurposes';
 
-export * from "./identity";
+export * from './identity';
 export * from './FidjApiAccountSelfService';
