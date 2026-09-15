@@ -9,5 +9,8 @@ export interface FidjApiUsersMeDetailsResponse {
         pendingEmail?: string | null;
         appsOwned: string[];
         appsSubscribed: string[];
+        // Whether this person administers Fidj itself, so the console knows
+        // whether to offer the platform view at all.
+        isAdmin?: boolean;
     };
 }

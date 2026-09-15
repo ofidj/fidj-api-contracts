@@ -1,4 +1,5 @@
 // Common
+export * from './FidjApiRateLimitsResponse';
 export * from './FidjApiStatusResponse';
 export * from './FidjApiErrorResponse';
 
