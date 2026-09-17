@@ -12,6 +12,11 @@ export interface FidjApiPrivacyAppsResponse {
         platform: boolean;
         deletionPending: boolean;
         appDataConnected?: boolean;
+        agreementDocument?: {
+            currentVersion: string;
+            acceptedVersion?: string;
+            href: string;
+        };
         consent: FidjApiConsentsResponse;
     }[];
 }
