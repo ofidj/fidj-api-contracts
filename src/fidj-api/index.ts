@@ -47,3 +47,4 @@ export * from './FidjApiPurposes';
 
 export * from './identity';
 export * from './FidjApiAccountSelfService';
+export * from './FidjApiPasskeys';

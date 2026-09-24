@@ -35,7 +35,7 @@ npm test               # Placeholder only; does not validate behavior
 
 ## Validation
 
-Follow [workspace TDD](../AGENTS.md): write a failing consumer/type fixture before changing a contract, implement until green, then refactor. Build this package and run affected API/SDK checks. The release-check script currently references a missing dependency-switch command; see the [release rules](../README.md#branches-and-releases).
+Follow [workspace TDD](../fidj-brain/AGENTS.md): write a failing consumer/type fixture before changing a contract, implement until green, then refactor. Build this package and run affected API/SDK checks. The release-check script currently references a missing dependency-switch command; see the [release rules](../fidj-brain/README.md#branches-and-releases).
 
 ## Account lifecycle
 
