@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.21.0] - 2026-10-03
+
+- `FidjApiAppsPublicResponse.app.legalLinks` no longer has `termsOfUse`: an
+  app's terms of use are its service agreement.
+
 ## [3.20.0] - 2026-10-03
 
 - `FidjApiServiceAgreement`: the agreement as one reader is shown it, with the

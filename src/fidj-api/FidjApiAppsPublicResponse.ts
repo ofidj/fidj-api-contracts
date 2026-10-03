@@ -16,10 +16,10 @@ export interface FidjApiAppsPublicResponse {
         description?: string;
         home?: string;
         agreement?: FidjApiServiceAgreement;
+        // No terms-of-use link: an app's terms of use are its agreement.
         legalLinks?: {
             privacyNotice?: string;
             legalNotice?: string;
-            termsOfUse?: string;
             salesTerms?: string;
         };
     };
