@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.20.0] - 2026-10-03
+
+- `FidjApiServiceAgreement`: the agreement as one reader is shown it, with the
+  `language` of its text and its `href` relative to the API root, naming that
+  language. `FidjApiAppsPublicResponse.app.agreement` uses it.
+- `FidjApiConsentsResponse` carries `termsLanguage` and `termsHref`: the
+  language the accepted version was read in, and the address of that text.
+
 ## [3.7.3] - 2026-09-14
 
 - Release on the shared @ofidj version: contracts, SDK, generator, API and
