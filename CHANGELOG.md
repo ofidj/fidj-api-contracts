@@ -12,6 +12,9 @@
 - `FidjApiRateLimitDetailsResponse`, now also served to an owner for their app
   at `GET /apps/:app_id/rate-limits/details`.
 - `FidjApiMeSessionsResponse`: an app signed in through Fidj is one row.
+- `FidjApiWebhooks`: an app's webhook, its health and the signed events it
+  receives (`consent.given`, `consent.withdrawn`, `agreement.accepted`,
+  `erasure.requested`).
 
 ## [3.21.0] - 2026-10-03
 
