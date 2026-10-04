@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.23.0] - 2026-10-04
+
+- `FidjApiReceipts`: signed receipts (A-10) — the receipt, its JWS payload
+  (ISO/IEC TS 27560 names: `piiPrincipalId`, `piiController`, `purpose`,
+  `notice`; `recordedBy` processor or controller; `erasure` with
+  `completedOnDay` and `deadlineAt`), the published keys and verification.
+
 ## [3.22.0] - unreleased
 
 - `FidjApiAppSummaryResponse` for `GET /apps/:app_id/summary`: members,
