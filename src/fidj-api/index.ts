@@ -50,3 +50,5 @@ export * from './FidjApiAccountSelfService';
 export * from './FidjApiPasskeys';
 export * from './FidjApiWebhooks';
 export * from './FidjApiReceipts';
+
+export * from './FidjApiExternalServices';

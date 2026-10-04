@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.24.0] - 2026-10-04
+
+- External-service cards/channels, protected connection views, private exit-case outcomes and manual editor claims/appointments.
+
+
 ## [3.23.0] - 2026-10-04
 
 - `FidjApiReceipts`: signed receipts (A-10) — the receipt, its JWS payload
