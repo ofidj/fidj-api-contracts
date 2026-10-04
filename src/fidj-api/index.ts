@@ -48,3 +48,4 @@ export * from './FidjApiPurposes';
 export * from './identity';
 export * from './FidjApiAccountSelfService';
 export * from './FidjApiPasskeys';
+export * from './FidjApiWebhooks';

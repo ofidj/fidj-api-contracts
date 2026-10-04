@@ -23,3 +23,24 @@ export interface FidjApiRateLimitsResponse {
     apps: FidjApiRateLimitRow[];
     unattributed: FidjApiRateLimitRow;
 }
+
+// GET /internal/rate-limits/details (admin, ?appId= or 'none') and
+// GET /apps/:app_id/rate-limits/details (owner, their app only).
+export interface FidjApiRateLimitDetailsResponse {
+    since: string;
+    // The width of one timeline bar.
+    bucketMinutes: number;
+    timeline: {at: string; count: number}[];
+    routes: {
+        appId?: string;
+        // The route pattern, never the URL.
+        route: string;
+        limiter: string;
+        count: number;
+        sources: number;
+        firstAt: string;
+        lastAt: string;
+    }[];
+    recent: {at: string; limiter: string; route: string; appId?: string}[];
+    limits: {limiter: string; max: number; windowSeconds: number}[];
+}

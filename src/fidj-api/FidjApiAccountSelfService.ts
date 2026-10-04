@@ -11,6 +11,8 @@ export interface FidjApiMeEmailChangeResponse {
 }
 
 // GET /me/sessions — the live sessions of this account, never their tokens.
+// One row per device and app; an app signed in through Fidj (OIDC) is one row
+// whatever the number of grants behind it, and ending it ends them all.
 export interface FidjApiMeSessionsResponse {
     sessions: {
         id: string;
