@@ -60,6 +60,12 @@ export interface FidjApiAppWebhookResponse {
     };
 }
 
+// POST /apps/:app_id/webhook/secret — a new secret; the old one stops signing
+// at once.
+export interface FidjApiAppWebhookSecretResponse {
+    secret: string;
+}
+
 // POST /apps/:app_id/webhook/test — sent at once, not kept.
 export interface FidjApiAppWebhookTestResponse {
     status: 'delivered' | 'failed';
