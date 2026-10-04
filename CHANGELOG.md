@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.25.0] - 2026-10-04
+
+- The 3.25 series; no shape changes (the `fidj` connector is a value of `connector`).
+
 ## [3.24.0] - 2026-10-04
 
 - External-service cards/channels, protected connection views, private exit-case outcomes and manual editor claims/appointments.
