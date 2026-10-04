@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.22.0] - unreleased
+
+- `FidjApiAppSummaryResponse` for `GET /apps/:app_id/summary`: members,
+  agreement coverage by version (current, previous, none, starter) and open
+  erasures with the age of the oldest.
+- `FidjApiAppsUsersResponse` rows carry `memberSince`, `lastSeenAt`, and the
+  accepted `termsVersion` and `termsAcceptedAt`.
+- `FidjApiMePasskey.authenticator`: the authenticator a passkey lives in, from
+  its AAGUID.
+- `FidjApiRateLimitDetailsResponse`, now also served to an owner for their app
+  at `GET /apps/:app_id/rate-limits/details`.
+- `FidjApiMeSessionsResponse`: an app signed in through Fidj is one row.
+
 ## [3.21.0] - 2026-10-03
 
 - `FidjApiAppsPublicResponse.app.legalLinks` no longer has `termsOfUse`: an

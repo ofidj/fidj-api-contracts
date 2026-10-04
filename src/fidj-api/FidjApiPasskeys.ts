@@ -15,6 +15,9 @@ export interface FidjApiMePasskeyCreateRequest {
 export interface FidjApiMePasskey {
     id: string;
     name: string;
+    // The kind of authenticator it lives in (iCloud Keychain, Google Password
+    // Manager…), from its AAGUID; null when it does not say or is not known.
+    authenticator?: string | null;
     createdAt: string;
     lastUsedAt?: string;
 }
