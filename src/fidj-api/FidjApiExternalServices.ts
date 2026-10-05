@@ -12,6 +12,12 @@ export interface FidjApiExitChannel {
     source: string;
     verifiedAt: string;
 }
+// A Fidj provider is named by its issuer; another server by its address.
+export interface FidjApiServiceProvider {
+    issuer?: string;
+    url?: string;
+    clientId: string;
+}
 export interface FidjApiExternalService {
     id: string;
     title: string;
@@ -23,6 +29,9 @@ export interface FidjApiExternalService {
     // candidate: an API is documented that Fidj cannot execute yet.
     capability: 'candidate' | 'A' | 'B' | 'C' | 'D';
     connector: string;
+    // Where Fidj reaches this card's provider, shown to whoever manages the
+    // card. A client secret is never returned.
+    provider?: FidjApiServiceProvider;
     channels: FidjApiExitChannel[];
     simulated: boolean;
     canManage?: boolean;

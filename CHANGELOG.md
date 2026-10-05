@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.26.0] - 2026-10-05
+
+- `FidjApiExternalService.provider` (`FidjApiServiceProvider`): where Fidj reaches a card's provider, for whoever manages the card. Providers are data on their cards.
+
 ## [3.25.0] - 2026-10-04
 
 - The 3.25 series; no shape changes (the `fidj` connector is a value of `connector`).
