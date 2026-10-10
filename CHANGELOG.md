@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.27.0] - 2026-10-10
+
+- `FidjApiExitLevel` and `FidjApiExitConduct`: an app's public answer carries its exit class (A–E or candidate) with the rule that set it, and, once five requests are settled, how the service answered them.
+- `FidjApiExternalService.capability` gains `E` (no channel found), and `searched` says where Fidj looked and when.
+
 ## [3.26.0] - 2026-10-05
 
 - `FidjApiExternalService.provider` (`FidjApiServiceProvider`): where Fidj reaches a card's provider, for whoever manages the card. Providers are data on their cards.

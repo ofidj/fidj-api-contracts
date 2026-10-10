@@ -27,12 +27,14 @@ export interface FidjApiExternalService {
     publisher?: string;
     // A: Fidj can execute the documented API deletion with the holder's token.
     // candidate: an API is documented that Fidj cannot execute yet.
-    capability: 'candidate' | 'A' | 'B' | 'C' | 'D';
+    capability: 'candidate' | 'A' | 'B' | 'C' | 'D' | 'E';
     connector: string;
     // Where Fidj reaches this card's provider, shown to whoever manages the
     // card. A client secret is never returned.
     provider?: FidjApiServiceProvider;
     channels: FidjApiExitChannel[];
+    // Class E: no channel found, where Fidj looked and when.
+    searched?: {where: string; at: string};
     simulated: boolean;
     canManage?: boolean;
 }

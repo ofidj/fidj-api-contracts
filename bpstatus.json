@@ -1,7 +1,8 @@
 {
   "type": "package",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "status": {
-    "check-project-type": "2026-05-28 10:59"
+    "check-project-type": "2026-05-28 10:59",
+    "check-scripts": "2026-10-10 15:11"
   }
 }
